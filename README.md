@@ -4,18 +4,18 @@
  # Brainstorming
  
  Locations:
- Mountains \n
- Hills
- Plains
- Forest
- Swamp
+ Mountains,
+ Hills,
+ Plains,
+ Forest,
+ Swamp,
  Desert
  
  Humanoid Races:
- Humans
- Elves
- Dwarves
- Orcs
+ Humans,
+ Elves,
+ Dwarves,
+ Orcs,
  Goblins
  
  Factions/Groups:
