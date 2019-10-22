@@ -4,7 +4,7 @@
  # Brainstorming
  
  Locations:
- Mountains /n
+ Mountains \n
  Hills
  Plains
  Forest
