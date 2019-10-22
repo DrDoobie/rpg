@@ -16,7 +16,11 @@
  - Elves
  - Dwarves
  - Orcs
+ - Ogres
  - Goblins
+ - Vampires
+ - Werewolves
+ - Sasquatch 
  
  **Factions/Groups:**
  
