@@ -1,9 +1,9 @@
 # rpg
  Rpg game in Unity made with C#
  
- # Brainstorming
+ ## Brainstorming
  
- Locations:
+ **Locations:**
  Mountains,
  Hills,
  Plains,
@@ -11,14 +11,14 @@
  Swamp,
  Desert
  
- Humanoid Races:
+ **Humanoid Races:**
  Humans,
  Elves,
  Dwarves,
  Orcs,
  Goblins
  
- Factions/Groups:
+ **Factions/Groups:**
  
- Characters:
+ **Characters:**
  
