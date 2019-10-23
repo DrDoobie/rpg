@@ -304,7 +304,7 @@ Transform:
   - {fileID: 1620487232}
   - {fileID: 355263391}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &396711067
 CharacterController:
@@ -758,7 +758,7 @@ Transform:
   - {fileID: 2046980817}
   - {fileID: 1453974246}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2029724275
 PrefabInstance:
@@ -994,7 +994,7 @@ PrefabInstance:
     - target: {fileID: 3279444209697035304, guid: 80a0441a7aafe624bb039eca7daf943d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3279444209697035304, guid: 80a0441a7aafe624bb039eca7daf943d,
         type: 3}
