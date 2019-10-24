@@ -8,13 +8,19 @@ public class GameController : MonoBehaviour
     public GameObject pauseUI;
 
    private void Update () {
-       CursorController();
-       PauseController();
+    PauseController();
    }
 
-   private void CursorController () {
-       Cursor.lockState = CursorLockMode.Locked;
-       Cursor.visible = false;
+    public void CursorLock (bool con) {
+       if(con)
+       {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+       } else {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+       }
    }
 
    private void PauseController () {
@@ -23,24 +29,33 @@ public class GameController : MonoBehaviour
            paused = !paused;
        }
 
-       if(paused)
+       if(paused) 
        {
-           Pause(true);
+           Pause();
 
        } else {
-           Pause(false);
+           Unpause();
        }
    }
 
-   public void Pause (bool con) {
-       if(con)
-       {
-            Time.timeScale = 0.0f;
-            pauseUI.SetActive(false);
+   public void Pause () {
+       Time.timeScale = 0.0f;
+       CursorLock(false);
+       pauseUI.SetActive(true);
 
-       } else {
-            Time.timeScale = 1.0f;
-            pauseUI.SetActive(true);
-       }
+       paused = true;
+   }
+
+   public void Unpause () {
+       Time.timeScale = 1.0f;
+       CursorLock(true);
+       pauseUI.SetActive(false);
+
+       paused = false;
+   }
+
+   public void QuitGame () {
+       Debug.Log("Quitting Game");
+       Application.Quit();
    }
 }
