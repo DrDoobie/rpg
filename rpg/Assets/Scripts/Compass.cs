@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Compass : MonoBehaviour
 {
     public bool isEnabled;
+    public GameObject text;
     private Transform player;
     private Vector3 dir; 
 
@@ -26,6 +27,7 @@ public class Compass : MonoBehaviour
         if(isEnabled)
         {
             GetComponent<Image>().enabled = true;
+            text.SetActive(true);
 
             dir.z = player.eulerAngles.y;
             transform.localEulerAngles = dir;
@@ -34,5 +36,6 @@ public class Compass : MonoBehaviour
         }
 
         GetComponent<Image>().enabled = false;
+        text.SetActive(false);
     }
 }
