@@ -674,6 +674,7 @@ GameObject:
   - component: {fileID: 396711067}
   - component: {fileID: 396711065}
   - component: {fileID: 396711068}
+  - component: {fileID: 396711069}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -773,6 +774,18 @@ MonoBehaviour:
   maxHealth: 100
   maxStamina: 100
   maxMana: 10
+--- !u!114 &396711069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396711064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb75c5c564b7488abe3d75b3a82317f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &402582676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
@@ -3658,7 +3671,7 @@ GameObject:
   - component: {fileID: 2085422339}
   - component: {fileID: 2085422342}
   - component: {fileID: 2085422341}
-  - component: {fileID: 2085422340}
+  - component: {fileID: 2085422343}
   m_Layer: 5
   m_Name: Compass.text
   m_TagString: Untagged
@@ -3685,21 +3698,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 74.99999}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2085422340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085422338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 2, y: -2}
-  m_UseGraphicAlpha: 1
 --- !u!114 &2085422341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3740,6 +3738,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085422338}
   m_CullTransparentMesh: 0
+--- !u!114 &2085422343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085422338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &2093705374
 PrefabInstance:
   m_ObjectHideFlags: 0
