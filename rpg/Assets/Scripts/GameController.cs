@@ -7,8 +7,15 @@ public class GameController : MonoBehaviour
     public bool paused;
     public GameObject pauseUI;
 
+    private void Start () {
+        CursorLock(true);
+    }
+
    private void Update () {
-        PauseController();
+    if(Input.GetButtonDown("Pause"))
+       {
+           Pause();
+       }
    }
 
     public void CursorLock (bool con) {
@@ -23,15 +30,12 @@ public class GameController : MonoBehaviour
        }
    }
 
-   private void PauseController () {
-       if(Input.GetButtonDown("Pause"))
-       {
-           paused = !paused;
+   public void Pause () {
+        paused = !paused;
 
-           pauseUI.SetActive(paused);
-           Time.timeScale = paused ? 0 : 1;
-           CursorLock(!paused);
-       }
+        pauseUI.SetActive(paused);
+        Time.timeScale = paused ? 0 : 1;
+        CursorLock(!paused);
    }
 
    public void QuitGame () {
