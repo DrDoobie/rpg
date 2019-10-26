@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
    public void Pause () {
         paused = !paused;
 
-        pauseUI.SetActive(paused);
+        //pauseUI.SetActive(paused);
         Time.timeScale = paused ? 0 : 1;
         CursorLock(!paused);
    }

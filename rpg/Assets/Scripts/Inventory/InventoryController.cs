@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public bool inventoryOpen;
+    public GameObject inventoryUI;
+    GameController gameController;
+
+    private void Start () {
+        gameController = FindObjectOfType<GameController>();
+        inventoryUI.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update ()
     {
-        
+        Controller();
+    }
+
+    private void Controller () {
+        if(Input.GetButtonDown("Inventory"))
+        {
+            inventoryOpen = !inventoryOpen;
+
+            gameController.Pause();
+            inventoryUI.SetActive(inventoryOpen);
+        }
     }
 }
