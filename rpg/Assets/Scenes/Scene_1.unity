@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 1602376729966526494, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: Rock_1
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -170,7 +170,7 @@ PrefabInstance:
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -448,8 +448,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &282945995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1365351714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &307753983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -460,7 +466,7 @@ PrefabInstance:
     - target: {fileID: 1602376729966526494, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: Rock_1
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -500,7 +506,7 @@ PrefabInstance:
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -729,7 +735,7 @@ Transform:
   - {fileID: 1620487232}
   - {fileID: 355263391}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &396711067
 CharacterController:
@@ -850,6 +856,7 @@ Transform:
   - {fileID: 1028646929}
   - {fileID: 1759031194}
   - {fileID: 975813194}
+  - {fileID: 282945995}
   m_Father: {fileID: 1719375002}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -964,7 +971,7 @@ PrefabInstance:
     - target: {fileID: 1602376729966526494, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: Rock_1
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -1004,7 +1011,7 @@ PrefabInstance:
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
@@ -1166,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
@@ -1485,7 +1492,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 28
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -1578,7 +1585,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 28
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -1808,7 +1815,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 16
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -2061,7 +2068,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 443052562}
     m_Modifications:
     - target: {fileID: 1491156858843393536, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
@@ -2106,7 +2113,7 @@ PrefabInstance:
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
@@ -2131,12 +2138,12 @@ PrefabInstance:
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 81.9
+      value: 81.89997
       objectReference: {fileID: 0}
     - target: {fileID: 2516103287072726035, guid: 0ef3853cd9207450cbe2478aeb1b19d4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 81.9
+      value: 81.90003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ef3853cd9207450cbe2478aeb1b19d4, type: 3}
@@ -2471,7 +2478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519032062
 GameObject:
@@ -2582,7 +2589,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 16
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -3097,7 +3104,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 16
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -3221,7 +3228,7 @@ Transform:
   - {fileID: 685779804}
   - {fileID: 443052562}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1759031194 stripped
 Transform:
@@ -3604,7 +3611,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 28
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -3714,7 +3721,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b4c765f371ae642689677fb0ac5fe0c3, type: 3}
     m_FontSize: 16
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
@@ -3743,7 +3750,7 @@ PrefabInstance:
     - target: {fileID: 1602376729966526494, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}
       propertyPath: m_Name
-      value: Rock
+      value: Rock_1
       objectReference: {fileID: 0}
     - target: {fileID: 2334994350357295629, guid: 11374be1e626c1d4d805f681a497a309,
         type: 3}

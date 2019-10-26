@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
     public GameObject pauseUI;
 
    private void Update () {
-    PauseController();
+        PauseController();
    }
 
     public void CursorLock (bool con) {
@@ -27,31 +27,11 @@ public class GameController : MonoBehaviour
        if(Input.GetButtonDown("Pause"))
        {
            paused = !paused;
+
+           pauseUI.SetActive(paused);
+           Time.timeScale = paused ? 0 : 1;
+           CursorLock(!paused);
        }
-
-       if(paused) 
-       {
-           Pause();
-
-       } else {
-           Unpause();
-       }
-   }
-
-   public void Pause () {
-       Time.timeScale = 0.0f;
-       CursorLock(false);
-       pauseUI.SetActive(true);
-
-       paused = true;
-   }
-
-   public void Unpause () {
-       Time.timeScale = 1.0f;
-       CursorLock(true);
-       pauseUI.SetActive(false);
-
-       paused = false;
    }
 
    public void QuitGame () {
