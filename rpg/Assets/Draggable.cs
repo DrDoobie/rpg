@@ -1,25 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class Draggable : EventTrigger {
 
-    private bool dragging;
+    float offsetX, offsetY;
 
-    public void Update () {
-        if(dragging) 
-        {
-            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        }
+    public void BeginDrag () {
+        offsetX = transform.position.x - Input.mousePosition.x;
+        offsetY = transform.position.y - Input.mousePosition.y;
     }
 
-    public override void OnPointerDown (PointerEventData eventData) {
-        dragging = true;
+    public void OnDrag () {
+        transform.position = new Vector2(offsetX + Input.mousePosition.x, offsetY + Input.mousePosition.y);
     }
-
-    public override void OnPointerUp (PointerEventData eventData) {
-        dragging = false;
-    }
-
-    //Code by Matthew Odle
 }
