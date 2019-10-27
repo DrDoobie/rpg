@@ -5,10 +5,21 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public bool paused;
+    public float health, stamina, mana;
     public GameObject pauseUI;
     public InventoryController inventoryController;
+    public static GameController instance;
 
-    private void Start () {
+    private void Awake () {
+        if(instance == null)
+        {
+            DontDestroyOnLoad(this);
+            instance = this;
+
+        } else if(instance != this) {
+            Destroy(gameObject);
+        }
+
         paused = false;
         CursorLock(true);
     }
