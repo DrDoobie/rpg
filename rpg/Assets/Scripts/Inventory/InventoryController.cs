@@ -21,10 +21,14 @@ public class InventoryController : MonoBehaviour
     private void Controller () {
         if(Input.GetButtonDown("Inventory"))
         {
-            inventoryOpen = !inventoryOpen;
-
-            gameController.Pause();
-            inventoryUI.SetActive(inventoryOpen);
+            OpenCloseInv();
         }
+    }
+
+    public void OpenCloseInv () {
+        inventoryOpen = !inventoryOpen;
+
+        gameController.Pause();
+        inventoryUI.SetActive(inventoryOpen);
     }
 }
