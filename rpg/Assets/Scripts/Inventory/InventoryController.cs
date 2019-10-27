@@ -19,7 +19,7 @@ public class InventoryController : MonoBehaviour
     }
 
     private void Controller () {
-        if(Input.GetButtonDown("Inventory"))
+        if(Input.GetButtonDown("Inventory") && !(gameController.pauseUI.activeInHierarchy))
         {
             OpenCloseInv();
         }

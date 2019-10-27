@@ -6,36 +6,48 @@ public class GameController : MonoBehaviour
 {
     public bool paused;
     public GameObject pauseUI;
+    public InventoryController inventoryController;
 
     private void Start () {
+        paused = false;
         CursorLock(true);
     }
 
    private void Update () {
-    if(Input.GetButtonDown("Pause"))
-       {
+        if(Input.GetButtonDown("Pause"))
+        {
+            if(inventoryController.inventoryOpen)
+            {
+                inventoryController.OpenCloseInv();
+                
+                return;
+            }
+
            Pause();
-       }
+        }
    }
 
     public void CursorLock (bool con) {
+        Cursor.visible = paused;
+
        if(con)
        {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
 
        } else {
             Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
        }
    }
 
    public void Pause () {
         paused = !paused;
 
-        pauseUI.SetActive(paused);
+        
         Time.timeScale = paused ? 0 : 1;
         CursorLock(!paused);
+
+        if(!inventoryController.inventoryOpen)
+            pauseUI.SetActive(paused);
    }
 
    public void QuitGame () {
