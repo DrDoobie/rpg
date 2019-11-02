@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameController : MonoBehaviour
     public float health, stamina, mana;
     public GameObject pauseUI;
     public InventoryController inventoryController;
+    public Text notificationsText;
     public static GameController instance;
 
     private void Awake () {
