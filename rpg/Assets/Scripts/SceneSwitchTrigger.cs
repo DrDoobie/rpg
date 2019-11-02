@@ -12,7 +12,7 @@ public class SceneSwitchTrigger : MonoBehaviour
     private void OnTriggerEnter (Collider other) {
         if(other.tag == "Player")
         {
-            StartCoroutine(Fading()); 
+            StartCoroutine(Fade());
         }
     }
 
@@ -27,11 +27,10 @@ public class SceneSwitchTrigger : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
-    IEnumerator Fading() 
-    {
-        anim.SetBool("Fade", true);
+    private IEnumerator Fade () {
+        anim.Play("Fade_Out");
 
-        yield return new WaitUntil(() => fadeScreen.color.a == 1);
+        yield return new WaitForSeconds(1.0f);
 
         SwitchScene();
     }
