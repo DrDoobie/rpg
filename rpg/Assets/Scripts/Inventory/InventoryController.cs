@@ -6,7 +6,7 @@ public class InventoryController : MonoBehaviour
 {
     public bool inventoryOpen;
     public GameObject inventoryUI;
-    public List<GameObject> items = new List<GameObject>();
+    public List<Item> items = new List<Item>();
     GameController gameController;
 
     private void Awake () {
@@ -34,7 +34,7 @@ public class InventoryController : MonoBehaviour
         inventoryUI.SetActive(inventoryOpen);
     }
 
-    public void AddItem (GameObject obj) {
-        items.Add(obj);
+    public void AddItem (Item item) {
+        items.Add(item);
     }
 }
