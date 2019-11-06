@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     public bool inventoryOpen;
-    public GameObject inventoryUI;
+    public GameObject inventoryUI, content;
     public List<Item> items = new List<Item>();
     GameController gameController;
 

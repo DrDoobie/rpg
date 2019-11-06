@@ -15,8 +15,7 @@ public class WorldItem : MonoBehaviour
     private void Controller () {
         if(inRange)
         {
-            GameController.instance.notificationsText.text = "'e' to pick up " + item.name;
-            GameController.instance.notificationsText.text = "'e' to pick up " + item.name;
+            GameController.instance.notificationsText.text = item.name;
 
             if(Input.GetButtonDown("Interact"))
             {

@@ -1102,6 +1102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryOpen: 0
   inventoryUI: {fileID: 2092830050}
+  content: {fileID: 1114040580}
   items: []
 --- !u!1 &420718797
 GameObject:
@@ -4116,6 +4117,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3980999672129265765, guid: fa863a25a3f64483ea2521ca0fa24aa2,
         type: 3}
+    - target: {fileID: 8134401981827651787, guid: fa863a25a3f64483ea2521ca0fa24aa2,
+        type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 507b8ce0c47b84b9790cd2b94bac66b2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa863a25a3f64483ea2521ca0fa24aa2, type: 3}
 --- !u!1 &1287507231
