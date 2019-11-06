@@ -5,11 +5,11 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     public bool inventoryOpen;
-    private GameObject inventoryUI;
+    public GameObject inventoryUI;
+    public List<GameObject> items = new List<GameObject>();
     GameController gameController;
 
     private void Awake () {
-        inventoryUI = GameObject.FindWithTag("InventoryUI");
         gameController = FindObjectOfType<GameController>();
 
         inventoryUI.SetActive(false);
@@ -32,5 +32,9 @@ public class InventoryController : MonoBehaviour
 
         gameController.Pause();
         inventoryUI.SetActive(inventoryOpen);
+    }
+
+    public void AddItem (GameObject obj) {
+        items.Add(obj);
     }
 }
