@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bd472e761c694e239d571858230f315, type: 3}
-  m_Name: Requiem
+  m_Name: Arondite
   m_EditorClassIdentifier: 
   name: Arondite, the Silver Sculptor
   description: The Silver Sculptor
-  obj: {fileID: 3980999672129265765, guid: fa863a25a3f64483ea2521ca0fa24aa2, type: 3}
+  itemObj: {fileID: 5690302582888213815, guid: d8aae2e9a581043439870c86c1693262, type: 3}

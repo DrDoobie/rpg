@@ -5,7 +5,8 @@ using UnityEngine;
 public class InventoryController : MonoBehaviour
 {
     public bool inventoryOpen;
-    public GameObject inventoryUI, content;
+    public GameObject inventoryUI;
+    public Transform content;
     public List<Item> items = new List<Item>();
     GameController gameController;
 
@@ -36,5 +37,8 @@ public class InventoryController : MonoBehaviour
 
     public void AddItem (Item item) {
         items.Add(item);
+
+        GameObject go = Instantiate(item.itemObj);
+        go.transform.SetParent(content, false);
     }
 }

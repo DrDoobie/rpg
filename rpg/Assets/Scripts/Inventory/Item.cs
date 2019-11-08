@@ -7,5 +7,5 @@ public class Item : ScriptableObject
 {
     public new string name;
     public string description;
-    public GameObject obj;
+    public GameObject itemObj;
 }

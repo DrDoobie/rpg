@@ -32,6 +32,7 @@ public class SceneSwitchTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
 
+        anim.Play("Fade_In");
         SwitchScene();
     }
 }
