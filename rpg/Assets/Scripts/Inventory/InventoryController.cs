@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour
 {
     public bool inventoryOpen;
     public GameObject inventoryUI;
+    public Text inventoryText;
+    public string invString;
     public Transform content;
     public List<Item> items = new List<Item>();
     GameController gameController;
@@ -14,6 +17,8 @@ public class InventoryController : MonoBehaviour
         gameController = FindObjectOfType<GameController>();
 
         inventoryUI.SetActive(false);
+
+        UpdateText();
     }
 
     private void Update ()
@@ -26,6 +31,10 @@ public class InventoryController : MonoBehaviour
         {
             OpenCloseInv();
         }
+    }
+    
+    private void UpdateText () {
+        inventoryText.text = invString + items.Count;
     }
 
     public void OpenCloseInv () {
@@ -40,5 +49,7 @@ public class InventoryController : MonoBehaviour
 
         GameObject go = Instantiate(item.itemObj);
         go.transform.SetParent(content, false);
+        
+        UpdateText();
     }
 }

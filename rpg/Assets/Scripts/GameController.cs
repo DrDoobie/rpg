@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public bool paused;
     public float health, stamina, mana;
-    public GameObject pauseUI;
+    public GameObject crosshair, pauseUI;
     public InventoryController inventoryController;
     public Text notificationsText;
     public static GameController instance;
@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
                 return;
             }
 
-           Pause();
+            Pause();
         }
    }
 
@@ -66,5 +66,9 @@ public class GameController : MonoBehaviour
    public void QuitGame () {
        Debug.Log("Quitting Game");
        Application.Quit();
+   }
+
+   public void Notify (string text) {
+       notificationsText.text = text;
    }
 }

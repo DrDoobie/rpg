@@ -5,45 +5,32 @@ using UnityEngine.UI;
 
 public class WorldItem : MonoBehaviour
 {
-    public bool inRange;
+    public bool selected;
     public Item item;
-
+    
     private void Update () {
-        Controller();
-    }
-
-    private void Controller () {
-        if(inRange)
+        if(!selected)
         {
-            GameController.instance.notificationsText.text = item.name;
-
-            if(Input.GetButtonDown("Interact"))
-            {
-                PickUp();
-            }
-
             return;
         }
 
-        GameController.instance.notificationsText.text = null;
+        GameController.instance.crosshair.SetActive(false);
     }
 
-    private void OnTriggerEnter (Collider other) {
-        if(other.tag == "Player")
-        {
-            inRange = true;
-        }
-    }
+    public void Select () {
+        selected = true;
 
-    private void OnTriggerExit (Collider other) {
-        if(other.tag == "Player")
+        string text = "(E) to take:\n" + item.name;
+        GameController.instance.Notify(text);
+
+        if(Input.GetButtonDown("Interact"))
         {
-            inRange = false;
+            PickUp();
         }
     }
 
     private void PickUp () {
-        GameController.instance.notificationsText.text = null;
+        GameController.instance.Notify(null);
         GameController.instance.inventoryController.AddItem(item);
 
         Destroy(this.gameObject);

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1151832982327885531}
   - component: {fileID: 1151832982327885534}
   - component: {fileID: 1151832982327885535}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -126,6 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryOpen: 0
   inventoryUI: {fileID: 0}
+  inventoryText: {fileID: 0}
+  invString: 
+  content: {fileID: 0}
+  items: []
 --- !u!1 &1151832982369257948
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +144,8 @@ GameObject:
   - component: {fileID: 1151832982369257958}
   - component: {fileID: 1151832982369257952}
   - component: {fileID: 1151832982369257953}
-  m_Layer: 0
+  - component: {fileID: 8266359370454199890}
+  m_Layer: 2
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -251,6 +256,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectMaterial: {fileID: 2100000, guid: 58db0d9843f4b4f2fac9e3d2717898b4, type: 2}
+--- !u!114 &8266359370454199890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151832982369257948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d004dfd6c98e483bb789ba78aeac03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1151832982369257955}
+  range: 5
 --- !u!1 &1151832983247292029
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +282,7 @@ GameObject:
   - component: {fileID: 1151832983247291905}
   - component: {fileID: 1151832983247291904}
   - component: {fileID: 1151832983247291907}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
