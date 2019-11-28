@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1151832982327885529}
   - component: {fileID: 1151832982327885531}
   - component: {fileID: 1151832982327885534}
-  - component: {fileID: 1151832982327885535}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -112,24 +111,6 @@ MonoBehaviour:
   maxHealth: 100
   maxStamina: 100
   maxMana: 10
---- !u!114 &1151832982327885535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1151832982327885530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bb75c5c564b7488abe3d75b3a82317f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryOpen: 0
-  inventoryUI: {fileID: 0}
-  inventoryText: {fileID: 0}
-  invString: 
-  content: {fileID: 0}
-  items: []
 --- !u!1 &1151832982369257948
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1151832982369257955}
+  selected: {fileID: 0}
   range: 5
 --- !u!1 &1151832983247292029
 GameObject:
