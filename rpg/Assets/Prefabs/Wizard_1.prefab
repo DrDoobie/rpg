@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5303799033420237812}
   - component: {fileID: 5303799033420237815}
-  - component: {fileID: 5303799033420237813}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -81,18 +80,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5303799033420237813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5303799033420237814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8fa6b1a63e6e429fb4bcecc7f050eb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6878969753978734526
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,6 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4811543243262552516}
+  - component: {fileID: 2790804326044177214}
   m_Layer: 0
   m_Name: Wizard_1
   m_TagString: Untagged
@@ -124,3 +112,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2790804326044177214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878969753978734526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fa6b1a63e6e429fb4bcecc7f050eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
