@@ -5458,6 +5458,11 @@ PrefabInstance:
       propertyPath: sprintSpeed
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1151832982369257953, guid: 27a12b5a8aa8d421cb23d010659a3fd7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1151832982327885535, guid: 27a12b5a8aa8d421cb23d010659a3fd7, type: 3}
     - {fileID: 4108845020178573509, guid: 27a12b5a8aa8d421cb23d010659a3fd7, type: 3}
